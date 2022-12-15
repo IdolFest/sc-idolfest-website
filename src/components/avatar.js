@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
   personLink: {
     '&:hover': {
       textDecoration: 'underline',
-      color: theme.palette.light_pink,
+      color: theme.palette.light_accent,
     }
   },
   avatarImage: {

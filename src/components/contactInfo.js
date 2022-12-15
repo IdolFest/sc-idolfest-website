@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
                 textDecoration: 'none',
                 boxShadow: 'none',
                 '& :hover': {
-                    color: theme.palette.light_pink
+                    color: theme.palette.light_accent
                 }
             },
             '& span': {

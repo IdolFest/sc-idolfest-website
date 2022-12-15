@@ -10,7 +10,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 const useStyles = makeStyles(theme => ({
     footer: {
-        backgroundColor: theme.palette.dark_pink,
+        backgroundColor: theme.palette.dark_accent,
         padding: '0 2em',
         '& .social': {
             padding: '1em',
@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
                 textDecoration: 'none',
                 boxShadow: 'none',
                 '& :hover': {
-                    color: theme.palette.light_pink
+                    color: theme.palette.light_accent
                 }
             },
             '& svg': {
@@ -32,7 +32,7 @@ const useStyles = makeStyles(theme => ({
             '& a': {
                 color: 'white',
                 '& :hover': {
-                    color: theme.palette.light_pink
+                    color: theme.palette.light_accent
                 }
             }
         },

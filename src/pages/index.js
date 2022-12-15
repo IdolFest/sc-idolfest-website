@@ -4,6 +4,7 @@ import Layout from '@components/layout'
 import Seo from '@components/seo'
 import PageContent from '@components/PageContent'
 import NewsletterSignup from '@components/NewsletterSignup'
+import { Box, Button } from '@material-ui/core'
 // import PageHeader from '@components/PageHeader'
 import { StaticImage } from 'gatsby-plugin-image'
 import { makeStyles } from '@material-ui/styles'
@@ -43,6 +44,15 @@ const IndexPage = () => {
         <p>We're so excited to announce SoCal IdolFest. SCIF will be coming to the Torrance Cultural Center on August 12, 2023.</p><br />
         <p>Sign up for our email list below to get all the latest SCIF updates!</p>
         <NewsletterSignup />
+
+        {/* Kinda hacked this in, remove when we have full navigation enabled */}
+        <Box style={{marginTop: '32px'}}>
+          <p>Want to perform at SoCal IdolFest? Apply below!</p>
+          <Button style={{width: "100%"}} variant="contained" className="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSeKFD9nhgx_1AbRvjYX-CWFi96PFPgFoN2AF-kwz7gJOCzGCw/viewform" target="_blank">
+            Apply to Perform
+          </Button>
+        </Box>
+        {/* End of hacky code */}
 
         <br /><br />
         <CenteredBox>

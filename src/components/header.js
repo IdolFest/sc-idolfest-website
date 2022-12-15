@@ -156,7 +156,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.primary.main,
     paddingRight: "79px",
     paddingLeft: "118px",
-    background: 'radial-gradient(circle, #470932 100%, #470932 100%) bottom no-repeat',
+    background: 'radial-gradient(circle, #E8943F 100%, #E8943F 100%) bottom no-repeat',
     backgroundSize: '100% 10px',
     position: 'sticky',
     "@media (max-width: 1200px)": {

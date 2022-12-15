@@ -23,8 +23,8 @@ const headerFont = `"Junegull", serif`;
 const mySans = `"Open Sans", "Source Sans Pro", sans-serif`;
 const BLACK = '#000000'
 const WHITE = '#ffffff'
-const LIGHT_PINK = '#f4a5d2'
-const DARK_PINK = '#e83e9f'
+const LIGHT_ACCENT = '#EDAB68'
+const DARK_ACCENT = '#D07418'
 
 const nwIdolfestTheme = isDark => responsiveFontSizes(createMuiTheme({
 	palette: {
@@ -35,8 +35,8 @@ const nwIdolfestTheme = isDark => responsiveFontSizes(createMuiTheme({
         secondary: {
             main: isDark ? WHITE : BLACK
         },
-		light_pink: LIGHT_PINK,
-		dark_pink: DARK_PINK,
+		light_accent: LIGHT_ACCENT,
+		dark_accent: DARK_ACCENT,
 	},
 	typography: {
 		fontFamily: mySans,
@@ -88,12 +88,12 @@ const nwIdolfestTheme = isDark => responsiveFontSizes(createMuiTheme({
 					boxShadow: 'none !important'
 				},
 				'button.cta, a.MuiButton-contained': {
-					backgroundColor: DARK_PINK,
+					backgroundColor: DARK_ACCENT,
 					padding: '1em',
 					marginTop: '1em',
 				},
 				'button.cta:hover, a.MuiButton-contained:hover': {
-					backgroundColor: LIGHT_PINK,
+					backgroundColor: LIGHT_ACCENT,
 				},
 				footer: {
 					color: isDark ? BLACK : WHITE,

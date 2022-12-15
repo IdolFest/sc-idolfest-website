@@ -10,7 +10,7 @@ const WelcomeWrapper = styled(Box)({
     color: 'black',
     background: 'rgb(250,210,233)',
     // eslint-disable-next-line no-dupe-keys
-    background: 'radial-gradient(circle, rgba(244, 165, 210, 1), rgba(250, 210, 233, 1) 0%, rgba(244, 165, 210, 1))',
+    background: 'radial-gradient(circle, rgba(237, 171, 104, 1), rgba(227, 127, 27, 1) 0%, rgba(237, 171, 104, 1))',
     justifyContent: 'center',
     alignItems: 'center',
     '& h1': {

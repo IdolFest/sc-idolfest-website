@@ -8,7 +8,7 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 const useStyles = makeStyles(theme => ({
   tierHeading: {
     color: 'black',
-    backgroundColor: theme.palette.light_pink,
+    backgroundColor: theme.palette.light_accent,
     alignSelf: 'center',
     justifySelf: 'center',
     width: '100%',
