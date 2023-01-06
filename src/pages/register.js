@@ -176,12 +176,6 @@ const OpenRegisterPage = () => {
           fullName: Yup.string()
             .max(80, 'Must be 80 characters or less')
             .required('Required'),
-          badgeName: Yup.string()
-            .matches(/^[\w@./#&+\-()[\]]*$/, 'Only alphanumeric and special characters !@#$%^&*()[] are allowed.')
-            .max(30, 'Must be 30 characters or less')
-            .required('Required'),
-          badgePronouns: Yup.string()
-            .max(30, 'Must be 30 characters or less'),
           websiteName: Yup.string()
             .when('badgeType', {
               is: (value) => ['badge-sponsor', 'badge-supersponsor'].indexOf(value)  > -1,
@@ -257,16 +251,6 @@ const OpenRegisterPage = () => {
 
           <Box margin={1}>
             <Field name="fullName" type="text" label="* Full Name" component={TextField} fullWidth={true} />
-          </Box>
-
-          <Box margin={1}>
-            <Field name="badgeName" type="text" label="* Badge Name" component={TextField} fullWidth={true} />
-            <FormHelperText id='badgeNameHelperText'>The name printed on your badge.</FormHelperText>
-          </Box>
-
-          <Box margin={1}>
-            <Field name="badgePronouns" type="text" label="Badge Pronouns (optional)" component={TextField} fullWidth={true} />
-            <FormHelperText id='badgePronounsHelperText'>The pronouns printed on your badge.</FormHelperText>
           </Box>
 
           { (props.values.badgeType === 'badge-sponsor' || props.values.badgeType === 'badge-supersponsor') && (
