@@ -11,7 +11,6 @@ import { KeyboardDatePicker } from 'formik-material-ui-pickers'
 import * as Yup from 'yup'
 import { MuiPickersUtilsProvider } from '@material-ui/pickers'
 import MomentUtils from '@date-io/moment'
-import CenteredBox from '@components/CenteredBox'
 
 import {
   Button, 
@@ -24,14 +23,14 @@ import { styled } from '@material-ui/styles'
 import { navigate, Link } from 'gatsby'
 import RegistrationTier from '@components/registrationTier'
 
-const registrationEnabled = false
+const registrationEnabled = true
 
 let lambdaUrl
 
 if (process.env.NODE_ENV === 'development') {
-  lambdaUrl = 'https://9lr67gx861.execute-api.us-east-1.amazonaws.com/reg1'
+  lambdaUrl = 'https://dh0u3gmyw2.execute-api.us-east-1.amazonaws.com/prod/reg-entry-dev'
 } else {
-  lambdaUrl = 'https://9lr67gx861.execute-api.us-east-1.amazonaws.com/reg1-prod'
+  lambdaUrl = 'https://dh0u3gmyw2.execute-api.us-east-1.amazonaws.com/prod/reg-entry'
 }
 
 const FormBox = styled(Box)({
@@ -41,54 +40,33 @@ const FormBox = styled(Box)({
 
 const allBadgeTiers = [
   {
-    badgeName: 'Attendee',
-    badgeKey: 'badge-attendee',
+    badgeName: 'Silver',
+    badgeKey: 'scif-badge-attendee',
     onSale: true,
     hasTax: true,
-    price: '20',
+    price: '<strike>25</strike> 20',
     tierName: 'Silver',
     description: 'This badge grants:',
     perks: [
-      'Access to all events at NWIF',
-      'NWIF Discord role',
-      'Special surprise at registration'
+      'Access to all SCIF events',
+      'SCIF Discord role',
     ]
   },
   {
-    badgeName: 'Sponsor',
-    badgeKey: 'badge-sponsor',
-    onSale: false,
+    badgeName: 'Gold',
+    badgeKey: 'scif-badge-sponsor',
+    onSale: true,
     hasTax: true,
-    price: '<strike>98</strike> SOLD OUT',
+    price: '50',
     tierName: 'Gold',
     description: 'Everything in Silver, plus:',
     perks: [
-      'Gold-only badge and lanyard',
+      'Exclusive Gold-only merchandise',
       'Drawstring bag',
       'Sticker pack',
-      'T-shirt',
-      'Exclusive poster',
       'Priority seating',
       'Sponsor-only Discord channel',
-      'NWIF website special thanks',
-    ]
-  },
-  {
-    badgeName: 'Super Sponsor',
-    badgeKey: 'badge-supersponsor',
-    onSale: false,
-    hasTax: true,
-    price: '<strike>694.20</strike> SOLD OUT',
-    tierName: 'Prism',
-    description: 'Everything in Gold, plus:',
-    perks: [
-      'Prism-only badge and lanyard',
-      'Hotel for 3 nights',
-      'Badge delivery to hotel room',
-      'NWIF pen light',
-      'Exclusive bromide print set',
-      'Can badge set',
-      'Closing Ceremonies special thanks',
+      'SCIF website & social media special thanks',
     ]
   },
   {
@@ -101,51 +79,11 @@ const allBadgeTiers = [
       'If you can dream it',
       'We can do it!'
     ]
-  },
-  {
-    badgeName: '5 and Under Badge',
-    badgeKey: 'badge-5-and-under',
-    onSale: false,
-    hasTax: false,
-    price: '0',
-    tierName: 'Mini Chibi',
-    description: "Children 5 and under are free when accompanied by an adult with a paid badge. (Max 2 children per adult.) <strong>No need to register them!</strong>",
-    perks: [
-      'Access to all events at NWIF',
-    ]
-  },
-  {
-    badgeName: '6 to 12 Badge',
-    badgeKey: 'badge-6-to-12',
-    onSale: true,
-    hasTax: true,
-    price: '10',
-    tierName: 'Chibi',
-    description: "Attendees 6-12 can register for half price. Must be accompanied by an adult with a paid badge.",
-    perks: [
-      'Access to all events at NWIF',
-      'Special surprise at registration',
-    ]
-  },
-  {
-    badgeName: 'Spirit Badge',
-    badgeKey: 'badge-spirit',
-    onSale: true,
-    hasTax: true,
-    price: '15',
-    tierName: 'Dekimasen',
-    description: "Can't attend, but want to show your support anyway? Purchase a Dekimasen badge! Please note this does not grant entry to NWIF. Shipping available to US and CA only.",
-    perks: [
-      'Badge and lanyard mailed to you',
-      'NWIF Discord role',
-    ]
   }
 ]
 
 const badgesRowOne = allBadgeTiers.slice(0, 4)
 const badgesRowTwo = allBadgeTiers.slice(4)
-
-const tshirtSizes = ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL']
 
 function badgeDropdownText(badge) {
   // remove the <strike> tags from our early bird reg
@@ -209,29 +147,6 @@ const OpenRegisterPage = () => {
     />
 
     <PageContent>
-      <CenteredBox>
-        <Grid container style={{ justifyContent: 'space-around' }}>
-          <div>
-          <h4>Badge Pick-Up Hours</h4>
-          <>
-            Thursday, October 20: 6-8 PM<br />
-            Friday, October 21: 10 AM-7 PM<br />
-            Saturday, October 22: 9:30 AM-7 PM<br />
-            Sunday, October 23: 9:30 AM-12 PM<br />
-          </>
-          </div>
-          <div>
-          <h4>Silver Badge Pricing</h4>
-          <>
-            Monday, Oct 17-Friday, Oct 21: $70<br />
-            Saturday, Oct 22: $50<br />
-            Sunday, Oct 23: $20<br />
-            <i>NWIF does not sell one day badges. <br />
-            Silver badges decrease in price as the weekend goes on.</i><br />
-          </>
-          </div>
-        </Grid>
-      </CenteredBox>
       <Grid container alignItems='stretch' justify='space-evenly' align-content='space-evenly'>
             {badgesRowOne.map((badge) => (
               <Grid item key={badge.badgeName}>
@@ -272,30 +187,9 @@ const OpenRegisterPage = () => {
               is: (value) => ['badge-sponsor', 'badge-supersponsor'].indexOf(value)  > -1,
               then: Yup.string().required('Required') 
             }),
-          tshirtSize: Yup.string()
-            .matches(/(S|M|L|XL|2XL|3XL|4XL)/)
-            .when('badgeType', {
-              is: (value) => ['badge-sponsor', 'badge-supersponsor'].indexOf(value)  > -1,
-              then: Yup.string().required('Required') 
-            }),
           discordHandle: Yup.string().matches(/^.+#\d{4}$/, 'Please provide your full handle, including tag.'),
           email: Yup.string().email('Invalid email address').required('Required'),
           dateOfBirth: Yup.date().nullable().required('Required'),
-          address1: Yup.string()
-            .when('badgeType', {
-              is: 'badge-spirit', 
-              then: Yup.string().required('Required') 
-            }),
-          city: Yup.string()
-            .when('badgeType', {
-              is: 'badge-spirit', 
-              then: Yup.string().required('Required') 
-            }),
-          state: Yup.string()
-            .when('badgeType', {
-              is: 'badge-spirit', 
-              then: Yup.string().required('Required') 
-            }),
           country: Yup.string().required('Required'),
         })}
         // validate={values => {
@@ -382,40 +276,6 @@ const OpenRegisterPage = () => {
           </Box>
           )}
 
-          { (props.values.badgeType === 'badge-sponsor' || props.values.badgeType === 'badge-supersponsor') && (
-          <Box margin={1}>
-            <FormControl>
-              <label htmlFor='tshirtSize'>* T-Shirt Size</label>
-              <Field
-                as="select"
-                name='tshirtSize'
-                id='tshirtSize'
-                aria-describedby='tshirtSizeHelperText'
-                style={{
-                  height: '50px',
-                  background: '#f3a5d2',
-                  borderRadius: '0',
-                  padding: '10px',
-                  fontSize: '1em',
-                  WebkitAppearance: 'none',
-                  border: 'grey solid 1.5px',
-                }}
-              >
-                <option value="" label='Select a t-shirt size'>Select a t-shirt size</option>
-                {tshirtSizes.map((size) => (
-                  <option
-                    value={size} 
-                    key={size}
-                    label={size}
-                  >
-                    {size}
-                  </option>
-                ))}
-              </Field>
-            </FormControl>
-          </Box>
-          )}
-
           <Box margin={1}>
             <Field name="discordHandle" type="text" label="Discord Handle (optional)" component={TextField} fullWidth={true} aria-describedby='discordHandleHelperText' />
             <FormHelperText id='discordHandleHelperText'>If you provide your Discord handle and join our server, we'll give you a special role!</FormHelperText>
@@ -446,29 +306,6 @@ const OpenRegisterPage = () => {
                 <>All attendees under 18 must bring a <a href="/Parental%20Consent%20Form.pdf" target="_blank">signed Parental Consent form</a>. <br />Please review our full <a href="/policies" target="_blank">Minor Policy</a> before proceeding.</> 
             )
             }
-
-          { props.values.badgeType === 'badge-spirit' && (
-             <>
-            <em>Please note we are only able to ship to addresses in the US and Canada.</em>
-              
-             <Box margin={1}>
-              <Field name="address1" type="text" label="* Address (Line 1)" component={TextField} fullWidth={true} />
-             </Box>
-             
-             <Box margin={1}>
-              <Field name="address2" type="text" label="Address (Line 2)" component={TextField} fullWidth={true} />
-             </Box>
-             
-             <Box margin={1}>
-              <Field name="city" type="text" label="* City" component={TextField} fullWidth={true} />
-             </Box>
-             
-             
-             <Box margin={1}>
-              <Field name="state" type="text" label="* State/Province" component={TextField} fullWidth={true} />
-             </Box>
-             </>
-          )}
                   
           <Box margin={1}>
             <Field name="country" type="text" label="* Country" component={TextField} fullWidth={true} />
@@ -509,7 +346,7 @@ const OpenRegisterPage = () => {
           A booster shot is required if your primary series vaccination is more than 6 months old.<br />
           Masks are required at all times.<br />
           Please read our <a href='/policies' target='_blank'>COVID policy</a> for full details.<br /><br />
-          By registering for a badge, you agree to comply with all <a href='/policies' target='_blank'>NWIF policies</a>. 
+          By registering for a badge, you agree to comply with all <a href='/policies' target='_blank'>SCIF policies</a>. 
           </i>
           {props.values.badgeType === 'badge-supersponsor' && (<><br /><br /><i>A credit card matching the name on your registration will be required for incidentals when checking into your Prism hotel room (or you may ask them to disable incidentals). The primary guest on the room must be over 18. Up to 2 additional guests may be added to the room by <Link to='/contact'>contacting us</Link>.</i></>) }
           <Button variant="contained" className="cta" type="submit">

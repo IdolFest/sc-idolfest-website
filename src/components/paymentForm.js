@@ -7,14 +7,14 @@ let lambdaUrl
 
 if (process.env.NODE_ENV === 'development') {
     appId = 'sandbox-sq0idb-S1xs9NDkn4cJR2JcDOupiA'
-    // this is the dev NWIF main location
+    // this is the dev Square main location
     // there is a separate location for (At Event)
     locationId = 'LWGKEFPEN4J9S'
-    lambdaUrl = 'https://9lr67gx861.execute-api.us-east-1.amazonaws.com/reg2'
+    lambdaUrl = 'https://dh0u3gmyw2.execute-api.us-east-1.amazonaws.com/prod/reg-payment-dev'
 } else {
     appId = 'sq0idp-OyXssltwNQblNk9NOxKJ4w'
-    locationId = 'L4RPAVMCK1MD7'
-    lambdaUrl = 'https://9lr67gx861.execute-api.us-east-1.amazonaws.com/reg2-prod'
+    locationId = 'L5CYNKWS08HGD'
+    lambdaUrl = 'https://dh0u3gmyw2.execute-api.us-east-1.amazonaws.com/prod/reg-payment'
 }
 
 export const loadSquareSdk = () => {
@@ -115,7 +115,7 @@ function displayPaymentResults(status, paymentResults) {
         statusContainer.classList.add('is-success');
         receiptContainer.style.visibility = 'visible';
         receiptContainer.style.visibility = 'visible';
-        receiptContainer.innerHTML = `Thank you for purchasing a NWIF badge! Please save <a href=${paymentResults.payment.receiptUrl} target="_blank">your receipt</a> before closing this page.<br /><br /><a href="https://discord.gg/h5yJbXgTgE" target="_blank">Join our Discord</a> and claim your role now!<br /><br />`;
+        receiptContainer.innerHTML = `Thank you for purchasing a SCIF badge! Please save <a href=${paymentResults.payment.receiptUrl} target="_blank">your receipt</a> before closing this page.<br /><br /><a href="https://discord.gg/h5yJbXgTgE" target="_blank">Join our Discord</a> and claim your role now!<br /><br />`;
     } else {
         statusContainer.classList.remove('is-success');
         statusContainer.classList.add('is-failure');
