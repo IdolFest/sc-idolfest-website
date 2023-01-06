@@ -47,17 +47,10 @@ const IndexPage = () => {
 
         {/* Kinda hacked this in, remove when we have full navigation enabled */}
         <Box style={{marginTop: '32px'}}>
-          <p>Want to be part of SoCal IdolFest? Apply below!</p>
-          <Button style={{width: "100%"}} variant="contained" className="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSeKFD9nhgx_1AbRvjYX-CWFi96PFPgFoN2AF-kwz7gJOCzGCw/viewform" target="_blank">
-            Apply to Perform
+          <p>Want to come? Get your badge here!</p>
+          <Button style={{width: "100%"}} variant="contained" className="cta" href="/register">
+            Buy a badge
           </Button>
-          <Button style={{width: "100%"}} variant="contained" className="cta" href="https://docs.google.com/forms/d/e/1FAIpQLScY61eFDGhnNvpCb_pLn33rr7sMCcxKCfbJ5F-GGFSfLdidnw/viewform" target="_blank">
-            Apply as a Vendor
-          </Button>
-          {/*
-          <Button style={{width: "100%"}} variant="contained" className="cta" href="" target="_blank">
-            Apply to Volunteer
-          </Button>*/}
         </Box>
 
         {/* End of hacky code */}
