@@ -230,7 +230,7 @@ const OpenRegisterPage = () => {
                 aria-describedby='badgeTypeHelperText'
                 style={{
                   height: '50px',
-                  background: '#f3a5d2',
+                  background: '#663399',
                   borderRadius: '0',
                   padding: '10px',
                   fontSize: '1em',
@@ -343,7 +343,6 @@ const OpenRegisterPage = () => {
           {!props.isValidating && props.isSubmitting ? <div>Submitting your registration, do not refresh the page!</div> : null}
           <i>
           Photo ID and proof of COVID vaccination is required to pick up your badge.<br />
-          A booster shot is required if your primary series vaccination is more than 6 months old.<br />
           Masks are required at all times.<br />
           Please read our <a href='/policies' target='_blank'>COVID policy</a> for full details.<br /><br />
           By registering for a badge, you agree to comply with all <a href='/policies' target='_blank'>SCIF policies</a>. 
