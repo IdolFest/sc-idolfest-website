@@ -230,7 +230,7 @@ const OpenRegisterPage = () => {
                 aria-describedby='badgeTypeHelperText'
                 style={{
                   height: '50px',
-                  background: '#663399',
+                  background: '#EDAB68',
                   borderRadius: '0',
                   padding: '10px',
                   fontSize: '1em',
