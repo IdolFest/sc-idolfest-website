@@ -9,7 +9,7 @@ const HeroText = styled(Container)({
   alignSelf: 'center',
   justifySelf: 'center',
   textAlign: 'center',
-  '& span': {
+  '& span.header': {
     backgroundColor: 'white',
     borderRadius: '5px',
     padding: '.25em',
@@ -45,7 +45,7 @@ export default function Hero({ header, body }) {
             position: 'relative',
         }}
       >
-        { header ? <h1><span>{header}</span></h1> : null }
+        { header ? <h1><span className="header">{header}</span></h1> : null }
         { body ? <p>{body}</p> : null }
       </HeroText>
     </div>

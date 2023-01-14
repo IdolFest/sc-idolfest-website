@@ -27,6 +27,13 @@ const useStyles = makeStyles(theme => ({
 
 const IndexPage = () => {
   const classes = useStyles()
+  const buyBadge = (
+    <Button style={{marginTop: "10em", transform: "scale(1.7)", padding: "8px 24px"}} 
+      variant="contained" 
+      className="cta" 
+      href="/register">
+      Buy a badge
+    </Button>)
 
   return (
     <Layout>
@@ -34,6 +41,7 @@ const IndexPage = () => {
 
       <Hero 
         header="Announcing SC IdolFest 2023!"
+        body={buyBadge}
       />
 
       {/* <PageHeader 
@@ -44,16 +52,6 @@ const IndexPage = () => {
         <p>We're so excited to announce SoCal IdolFest. SCIF will be coming to the Torrance Cultural Center on August 12, 2023.</p><br />
         <p>Sign up for our email list below to get all the latest SCIF updates!</p>
         <NewsletterSignup />
-
-        {/* Kinda hacked this in, remove when we have full navigation enabled */}
-        <Box style={{marginTop: '32px'}}>
-          <p>Want to come? Get your badge here!</p>
-          <Button style={{width: "100%"}} variant="contained" className="cta" href="/register">
-            Buy a badge
-          </Button>
-        </Box>
-
-        {/* End of hacky code */}
 
         <br /><br />
         <CenteredBox>
