@@ -21,12 +21,10 @@ const headersData = [
     label: "Register",
     href: "/register",
   },
-  /*
   {
-    label: "Hotel",
-    href: "/hotel",
+    label: "Location",
+    href: "/venue",
   },
-  */
   {
     label: "Apply to Perform",
     href: "https://docs.google.com/forms/d/e/1FAIpQLSeKFD9nhgx_1AbRvjYX-CWFi96PFPgFoN2AF-kwz7gJOCzGCw/viewform",

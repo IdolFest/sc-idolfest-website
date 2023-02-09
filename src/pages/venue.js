@@ -8,7 +8,6 @@ import { styled } from '@material-ui/styles'
 import CenteredBox from '@components/CenteredBox'
 import { useStaticQuery, graphql } from 'gatsby'
 // the following 2 imports are used when hotel booking is CLOSED
-import { Link } from 'gatsby'
 import { Container } from '@material-ui/core'
 
 // the following is used when hotel booking is OPEN
@@ -29,6 +28,8 @@ const rows = [
   createData('Double Queen', '$129'),
 ]
 */
+
+const annoyinglyLongMapUrl = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.9499486722684!2d-118.34613194858373!3d33.83940138056933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b52a55535501%3A0xbf414574f90a0717!2sTorrance%20Cultural%20Arts%20Center!5e0!3m2!1sen!2sus!4v1675748877150!5m2!1sen!2sus';
 
 const ResponsiveMap = styled(Container)({
     overflow: 'hidden',
@@ -60,26 +61,25 @@ const HotelPage = () => {
     
   return (
   <Layout>
-    <Seo title="Hotel" />
+    <Seo title="Location" />
      
     <PageHeader 
-      title="Hotel" 
+      title="Location" 
     />
 
     <PageContent>
-      <StaticImage 
+      {/*<StaticImage 
         src="../images/Hotel.jpeg"
         // This is a presentational image, so the alt should be an empty string
         alt=''
-      />
+      />*/}
       <p>
-        Northwest IdolFest will be held on {dates}, at the DoubleTree by Hilton Hotel Seattle Airport. Access the venue by complimentary shuttle from Sea-Tac Airport, or by light rail from downtown Seattle.
-          <br /><br />
-          
-          Online hotel booking is now closed. Please <Link to="/contact">contact us</Link> if you would like assistance booking a room at our discounted rates. 
+        SoCal IdolFest will be held on {dates}, at the Torrance Cultural Arts Center in Torrance, California. 
           <br /><br />
          
-        We offer a discounted $15/day parking rate to all attendees. This discount will be automatically applied if you book a hotel room in our block and charge parking to your room. If you do not have a hotel room, we will have vouchers available at registration.
+        There is plenty of free parking at the venue.
+        <br /><br />
+        As this is a one-day event, there is no official hotel available. There are multiple hotels in the area, however.
       </p>
       { /* the following is used when hotel booking is OPEN */ }
       {/* <CenteredBox>
@@ -114,23 +114,19 @@ const HotelPage = () => {
       </CenteredBox> */}
       <CenteredBox>
         <ResponsiveMap>
-          <iframe title="Hotel map" maxwidth="600" height="450" style={{ border: 0}} loading="lazy" allowFullScreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJK3JMX6dckFQR7lXNagC5B9Q&key=AIzaSyDk8pOuoUbrYKocNBn6QzLe9j-bUAx7GvA"></iframe>
+          <iframe title="Hotel map" maxwidth="600" height="450" style={{ border: 0}} loading="lazy" allowFullScreen src={annoyinglyLongMapUrl}></iframe>
         </ResponsiveMap>
 
         <h2>How to Get Here</h2> 
       </CenteredBox>
-      <h3>Light Rail</h3>
-      <p>Link Light Rail operates every 6-15 minutes from Downtown Seattle to SeaTac station. Travel time is approximately 31 minutes from International District-Chinatown station and 38 minutes from  Westlake station.</p>
-
-      <p>From the light rail station, go down the stairs or elevator and cross 176th Street. Follow 176th for 0.6 of a mile, and the DoubleTree will be on your left. You can also cross the skybridge from the light rail station and take the complimentary shuttle.</p>
-
-      <h3>Sea-Tac Airport</h3>
-        <p>Complimentary shuttles to the DoubleTree Hotel Seattle Airport leave every 15 minutes during the day. Call (206) 246-8600 to check when the next shuttle will be available.</p>
-
-        <p>There are two DoubleTree shuttles available at the hotel. Make sure to get on the one bound for DoubleTree Hotel Seattle Airport. Do NOT get on the shuttle for DoubleTree Suites by Hilton Hotel Seattle Airport - Southcenter. That is a different hotel. If you are unsure about the destination of the shuttle you are boarding, please confirm with the driver.</p>
-      
       <h3>Driving</h3>
-      <p>Take I-5 to exit 152 and follow 188th St. The DoubleTree is located on the corner of 188th St. and Pacific Hwy.</p>
+      
+      <p>
+        Driving directions can be found on
+        {' '} 
+        <a href="https://arts.torranceca.gov/our-city/general-services/cultural-arts/tcac-driving-directions">the venue's website</a>.
+
+      </p>
     </PageContent>
   </Layout>
 )}
