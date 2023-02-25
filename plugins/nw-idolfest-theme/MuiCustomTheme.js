@@ -23,8 +23,8 @@ const headerFont = `"Junegull", serif`;
 const mySans = `"Open Sans", "Source Sans Pro", sans-serif`;
 const BLACK = '#000000'
 const WHITE = '#ffffff'
-const LIGHT_ACCENT = '#EDAB68'
-const DARK_ACCENT = '#D07418'
+const LIGHT_ACCENT = '#eeb568'
+const DARK_ACCENT = '#ef9534'
 
 const nwIdolfestTheme = isDark => responsiveFontSizes(createMuiTheme({
 	palette: {

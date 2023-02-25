@@ -35,53 +35,20 @@ const headersData = [
     href: "https://docs.google.com/forms/d/e/1FAIpQLScY61eFDGhnNvpCb_pLn33rr7sMCcxKCfbJ5F-GGFSfLdidnw/viewform",
     external: true,
   },
-  /*
+  
   {
-    label: "Guests",
-    href: "/guests",
+    label: "Performers",
+    href: "/performers",
     children: [
     {
-      label: "All Guests",
-      href: "/guests",
+      label: "All Performers",
+      href: "/performers",
     },
     {
-      label: "Kaho Shibuya",
-      href: "/guests/kahoshibuya"
-    },
-    {
-      label: "Isiliel (Himari)",
-      href: "/guests/isiliel"
-    },
-    {
-      label: "Phoebe",
-      href: "/guests/phoebe"
-    },
-    {
-      label: "Rintaichou",
-      href: "/guests/rintaichou"
-    },
-    {
-      label: "Non Sweet",
-      href: "/guests/nonsweet"
-    },
-    {
-      label: "Jun (Lucia Hunter)",
-      href: "/guests/jun"
-    },
-    {
-      label: "Barri",
-      href: "/guests/barri"
-    },
-    {
-      label: "Eli Ebberts",
-      href: "/guests/eliebberts"
-    },
-    {
-      label: "Luluko",
-      href: "/guests/luluko"
-    },
-    ]
-  },
+      label: "Aqu♡rius",
+      href: "/performers/aqu♡rius"
+    }]
+  },/*
   {
     label: "Events",
     href: "/events",

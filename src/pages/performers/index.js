@@ -9,25 +9,18 @@ import Grid from '@material-ui/core/Grid'
 
 const GuestsPage = () => (
     <Layout>
-        <Seo title="Guests" />
+        <Seo title="Performers" />
 
         <PageHeader
-            title="Guests"
+            title="Performers"
         />
 
         <PageContent>
             <h2><CenteredBox>Appearing In Person</CenteredBox></h2>
             <Grid container style={{ justifyContent: 'space-around' }}>
-                <Avatar personName="Kaho Shibuya" showLink={true} />
-                <Avatar personName="Isiliel" showLink={true} />
-                <Avatar personName="Phoebe" showLink={true} />
-                <Avatar personName="Rintaichou" showLink={true} />
-                <Avatar personName="Non Sweet" showLink={true} />
-                <Avatar personName="Jun" showLink={true} />
-                <Avatar personName="Barri" showLink={true} />
-                <Avatar personName="Eli Ebberts" showLink={true} />
-                <Avatar personName="Luluko" showLink={true} />
+                <Avatar personName="Aqu♡rius" showLink={true} />
             </Grid>
+            <CenteredBox><em>More guests coming soon!</em></CenteredBox>
         </PageContent>
     </Layout>
 )
