@@ -47,6 +47,9 @@ const headersData = [
     {
       label: "Aqu♡rius",
       href: "/performers/aqu♡rius"
+    }, {
+      label: "PAiDA",
+      href: "/performers/paida"
     }]
   },/*
   {
