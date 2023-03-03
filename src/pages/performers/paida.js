@@ -18,10 +18,10 @@ const BarriPage = () => {
 
     return (
         <Layout>
-            <Seo title="Aqu♡rius" />
+            <Seo title="PAiDA" />
 
             <PageHeader
-                title="Aqu♡rius"
+                title="PAiDA"
             />
 
             <PageContent>
