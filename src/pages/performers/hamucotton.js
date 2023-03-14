@@ -29,7 +29,7 @@ const HamuCottonPage = () => {
                     is best known for her <a href="https://www.youtube.com/watch?v=-M5xMYArX-0">Chika Dance video</a>, which 
                     has nearly 5 million views!
                     <br />
-                    Hamu Cotton will be bringing her passions to SCIF, by performing a special dance set, and also acting as our
+                    Hamu Cotton will be bringing her passions to SCIF by performing a special dance set, and also acting as our
                     MC!
                 </Guest>
             </PageContent>
