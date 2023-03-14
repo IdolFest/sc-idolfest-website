@@ -5,7 +5,7 @@ import PageContent from '@components/PageContent'
 import PageHeader from '@components/PageHeader'
 import Guest from '@components/Guest'
 
-const BarriPage = () => {
+const AquariusPage = () => {
     const guestSocials = [
         { link: `https://twitter.com/aquariusca_alt`, icon: 'twitter'},
         { link: `https://bit.ly/aquarius_alt`, icon: 'home', iconLibrary: 'fas'},
@@ -31,4 +31,4 @@ const BarriPage = () => {
     )
 }
 
-export default BarriPage
+export default AquariusPage

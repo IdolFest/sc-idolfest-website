@@ -50,6 +50,9 @@ const headersData = [
     }, {
       label: "PAiDA",
       href: "/performers/paida"
+    }, {
+      label: "Hamu Cotton",
+      href: "/performers/hamucotton"
     }]
   },/*
   {

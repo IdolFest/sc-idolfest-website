@@ -5,7 +5,7 @@ import PageContent from '@components/PageContent'
 import PageHeader from '@components/PageHeader'
 import Guest from '@components/Guest'
 
-const BarriPage = () => {
+const PaidaPage = () => {
     const guestSocials = [
         { link: `https://www.paida.space/`, icon: 'home', iconLibrary: 'fas'},
         { link: `https://twitter.com/gingagirlpaida`, icon: 'twitter'},
@@ -34,4 +34,4 @@ const BarriPage = () => {
     )
 }
 
-export default BarriPage
+export default PaidaPage
