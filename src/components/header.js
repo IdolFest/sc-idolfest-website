@@ -30,11 +30,11 @@ const headersData = [
     href: "https://docs.google.com/forms/d/e/1FAIpQLSeKFD9nhgx_1AbRvjYX-CWFi96PFPgFoN2AF-kwz7gJOCzGCw/viewform",
     external: true,
   },
-  {
+  /*{
     label: "Apply as a Vendor",
     href: "https://docs.google.com/forms/d/e/1FAIpQLScY61eFDGhnNvpCb_pLn33rr7sMCcxKCfbJ5F-GGFSfLdidnw/viewform",
     external: true,
-  },
+  },*/
   
   {
     label: "Performers",
