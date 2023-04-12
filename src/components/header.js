@@ -53,6 +53,9 @@ const headersData = [
     }, {
       label: "Hamu Cotton",
       href: "/performers/hamucotton"
+    }, {
+      label: "Asayoru Maid Cafe",
+      href: "/performers/asayorumaidcafe"
     }]
   },/*
   {
