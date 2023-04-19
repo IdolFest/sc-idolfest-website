@@ -25,11 +25,12 @@ const AsayoruMaidCafe = () => {
 
             <PageContent>
                 <Guest personName="Asayoru Maid Cafe" guestTitle="Maid Cafe" guestSocials={guestSocials}>
-                    Asayoru Cafe is a maid costume-concept cafe in Arcadia, California. It takes inspiration
-                    from the cafes in Akihabara, Japan. Their maids will be doing a performance for the masters
-                    and princesses at Socal Idolfest!<br />
+                    Asayoru Maid Cafe will be performing for all the masters and princesses attending SoCal IdolFest 2023!<br />
                     <br />
-                    The cafe has a brick-and-mortar location in Arcadia, if you want to visit!
+                    Asayoru Maid Cafe is a maid costume-concept cafe, inspired by the ones in Akihabara, Japan. 
+                    Our cafe strives to be a place of comfort to guests of all ages, creating a feeling of “coming home” with Japanese-inspired comfort 
+                    foods and warm hospitality. We aim to create a magical, fun, and relaxing environment for our guests and staff where everyone can feel 
+                    welcome and happy!
                 </Guest>
             </PageContent>
         </Layout>
