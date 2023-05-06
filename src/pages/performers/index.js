@@ -24,6 +24,7 @@ const GuestsPage = () => (
                 <Avatar personName="Asayoru Maid Cafe" showLink={true} />
                 <Avatar personName="Phoebe" showLink={true} />
                 <Avatar personName="Alexis" showLink={true} />
+                <Avatar personName="Deco*Pro" showLink={true} />
 
             </Grid>
         </PageContent>

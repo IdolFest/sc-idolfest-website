@@ -62,6 +62,9 @@ const headersData = [
     }, {
       label: "Alexis",
       href: "/performers/alexis"
+    }, {
+      label: "Deco*Pro",
+      href: "/performers/deco*pro"
     }]
   },/*
   {
