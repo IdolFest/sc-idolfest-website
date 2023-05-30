@@ -9,7 +9,6 @@ import { Box, Button } from '@material-ui/core'
 import { StaticImage } from 'gatsby-plugin-image'
 import { makeStyles } from '@material-ui/styles'
 import CenteredBox from '@components/CenteredBox'
-import SaleBanner from '../components/SaleBanner'
 
 const useStyles = makeStyles(theme => ({
     partnerLogo: {
@@ -50,7 +49,6 @@ const IndexPage = () => {
       /> */}
 
       <PageContent>
-        <SaleBanner />
         <p>We're so excited to announce SoCal IdolFest. SCIF will be coming to the Torrance Cultural Center on August 12, 2023.</p><br />
         <p>Sign up for our email list below to get all the latest SCIF updates!</p>
         <NewsletterSignup />
