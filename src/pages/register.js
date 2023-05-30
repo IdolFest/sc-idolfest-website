@@ -44,7 +44,7 @@ const allBadgeTiers = [
     badgeKey: 'scif-badge-attendee',
     onSale: true,
     hasTax: true,
-    price: '<strike>30</strike> 20',
+    price: '<strike>30</strike> 25',
     tierName: 'Silver',
     description: 'This badge grants:',
     perks: [
@@ -57,7 +57,7 @@ const allBadgeTiers = [
     badgeKey: 'scif-badge-sponsor',
     onSale: true,
     hasTax: true,
-    price: '<strike>50</strike> 45',
+    price: '50',
     tierName: 'Gold',
     description: 'Everything in Silver, plus:',
     perks: [
