@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 export const loadSquareSdk = () => {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {  
         const sqPaymentScript = document.createElement("script")
         if (process.env.NODE_ENV === 'development') {
             sqPaymentScript.src = "https://sandbox.web.squarecdn.com/v1/square.js"
@@ -116,6 +116,10 @@ function displayPaymentResults(status, paymentResults) {
         receiptContainer.style.visibility = 'visible';
         receiptContainer.style.visibility = 'visible';
         receiptContainer.innerHTML = `Thank you for purchasing a SCIF badge! Please save <a href=${paymentResults.payment.receiptUrl} target="_blank">your receipt</a> before closing this page.<br /><br /><a href="https://discord.gg/h5yJbXgTgE" target="_blank">Join our Discord</a> and claim your role now!<br /><br />`;
+        if (typeof window !== "undefined" && typeof window.gtag !== "undefined") { 
+            const params = new URLSearchParams(document.location.search);
+            window.gtag("event", "badge-purchase", {badgeType: params.get("badge_type") ?? "Unknown"})
+        }
     } else {
         statusContainer.classList.remove('is-success');
         statusContainer.classList.add('is-failure');
