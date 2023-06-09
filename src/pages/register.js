@@ -55,9 +55,9 @@ const allBadgeTiers = [
   {
     badgeName: 'Gold',
     badgeKey: 'scif-badge-sponsor',
-    onSale: true,
+    onSale: false,
     hasTax: true,
-    price: '50',
+    price: '<strike>50</strike> SOLD OUT',
     tierName: 'Gold',
     description: 'Everything in Silver, plus:',
     perks: [

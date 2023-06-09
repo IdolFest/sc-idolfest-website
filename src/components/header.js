@@ -65,6 +65,9 @@ const headersData = [
     }, {
       label: "Deco*Pro",
       href: "/performers/deco*pro"
+    }, {
+      label: "Idodori Idols",
+      href: "/performers/idodoriidols"
     }]
   },/*
   {
