@@ -68,6 +68,9 @@ const headersData = [
     }, {
       label: "Irodori Idols",
       href: "/performers/irodoriidols"
+    }, {
+      label: "Amanda Tanadinata",
+      href: "/performers/amandatanadinata"
     }]
   },/*
   {
