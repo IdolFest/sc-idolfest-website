@@ -15,3 +15,4 @@ The site uses gh-pages to deploy. Assuming you have collaborator access to this 
 
 1. Locally, run `npm run deploy`.
 2. From GitHub, go to "Actions" and manually invoke Gatsby Publish.
+
