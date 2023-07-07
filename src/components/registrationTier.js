@@ -43,6 +43,8 @@ const HeroText = styled(Box)({
   margin: '1em 0 0 0',
   height: '3em',
   textAlign: 'center',
+  // TODO: Roll this back when we remove the sale
+  fontSize: '80%',
   '& span': {
     size: '2em',
     textTransform: 'uppercase',
