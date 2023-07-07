@@ -22,7 +22,23 @@ const useStyles = makeStyles(theme => ({
       fontSize: '2em',
       fontFamily: 'Junegull',
       margin: '1em'
+    },
+    buttonHolder: {
+      display: "flex",
+      flexWrap: "wrap",
+      "& > a": {
+        flexGrow: 1,
+        margin: "4px 32px",
+        width: "200px",
+        flexBasis: "200px",
+        marginTop: "24px",
+        textAlign: "center"
+      },
+      "& > .MuiButton-sizeLarge": {
+        fontSize: "150%"
+      }
     }
+  
 }))
 
 const IndexPage = () => {
@@ -49,8 +65,26 @@ const IndexPage = () => {
       /> */}
 
       <PageContent>
-        <p>We're so excited to announce SoCal IdolFest. SCIF will be coming to the Torrance Cultural Center on August 12, 2023.</p><br />
-        <p>Sign up for our email list below to get all the latest SCIF updates!</p>
+        <p>Get ready for SC IdolFest 2023!</p>
+
+        <p>
+          SoCal IdolFest is a one day concert all about idols, anisong, and j-pop! Featuring your favorite idol performers and 
+          a stellar lineup of vendors, join us in Torrance, CA on August 12
+        </p>
+        <p>
+          Badges are currently on sale! Buy before the event and save money - badges will be $35 at the door!
+        </p>
+
+        <div className={classes.buttonHolder}>
+          <Button variant="contained" size="large" className="cta" href="/register">Buy a Badge</Button>
+        </div>
+
+        <br />
+        <br />
+        <p>
+          Sign up for our email list below to get notifications for future announcements.
+        </p>
+
         <NewsletterSignup />
 
         <br /><br />
