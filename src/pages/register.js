@@ -76,9 +76,9 @@ const allBadgeTiers = [
     hasTax: false,
     price: '5',
     tierName: 'Dekimasen',
-    description: "Can't attend, but want to show your support anyway? Purchase a Dekimasen badge! Please note this does not grant entry to NWIF, or any physical item. You'll get our eternal thanks, and a discord role!",
+    description: "Can't attend, but want to show your support anyway? Purchase a Dekimasen badge! Please note this does not grant entry to SCIF, or any physical item. You'll get our eternal thanks, and a discord role!",
     perks: [
-      'NWIF Discord role',
+      'SCIF Discord role',
     ]
   },
   /*
