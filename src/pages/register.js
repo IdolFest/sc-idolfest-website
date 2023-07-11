@@ -44,7 +44,7 @@ const allBadgeTiers = [
     badgeKey: 'scif-badge-attendee',
     onSale: true,
     hasTax: true,
-    price: '<strike>30</strike> $25 until July 20th.<br />$35 at the door',
+    price: '<strike>30</strike> 25 until July 22nd.<br />$35 at the door',
     tierName: 'Silver',
     description: 'This badge grants:',
     perks: [
@@ -70,6 +70,19 @@ const allBadgeTiers = [
     ]
   },
   {
+    badgeName: 'Spirit Badge',
+    badgeKey: 'scif-badge-spirit',
+    onSale: true,
+    hasTax: false,
+    price: '5',
+    tierName: 'Dekimasen',
+    description: "Can't attend, but want to show your support anyway? Purchase a Dekimasen badge! Please note this does not grant entry to NWIF, or any physical item. You'll get our eternal thanks, and a discord role!",
+    perks: [
+      'NWIF Discord role',
+    ]
+  },
+  /*
+  {
     badgeName: 'Whale',
     price: '???',
     onSale: false,
@@ -79,7 +92,7 @@ const allBadgeTiers = [
       'If you can dream it',
       'We can do it!'
     ]
-  }
+  }*/
 ]
 
 const badgesRowOne = allBadgeTiers.slice(0, 4)
@@ -87,7 +100,8 @@ const badgesRowTwo = allBadgeTiers.slice(4)
 
 function badgeDropdownText(badge) {
   // remove the <strike> tags from our early bird reg
-  const badgePrice = badge.price.split("</strike> ").slice(-1)[0]
+  let badgePrice = badge.price.split("</strike> ").slice(-1)[0]
+  if (badgePrice.indexOf('until') !== -1) { badgePrice = badgePrice.substr(0, badgePrice.indexOf('until')) }
   if (badge.tierName) {
     if (badge.hasTax) {
       return `${badge.tierName} - ${badge.badgeName} ($${badgePrice} + tax)`
