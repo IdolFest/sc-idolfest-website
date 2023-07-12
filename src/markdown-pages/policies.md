@@ -14,9 +14,7 @@ Anyone who accepts a SCIF badge agrees to indemnify and hold harmless SCIF and i
 
 ## COVID-19
 
-SCIF will release a full COVID policy no later than one month prior to the event.
-
-COVID policies may change without notice, including during the event. SCIF will always seek to exceed minimum compliance with health regulations, as the health and safety of all attendees and staff are our #1 priority. Attendees are required to comply with all COVID-19 preventative measures.
+Masking is encouraged, but not required. We will not be requiring COVID-19 vaccines, but strongly recommend getting vaccinated and/or boosted prior to attending SoCal IdolFest.
 
 ## Anti-Harassment
 
