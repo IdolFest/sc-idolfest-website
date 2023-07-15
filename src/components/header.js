@@ -71,12 +71,15 @@ const headersData = [
     }, {
       label: "Amanda Tanadinata",
       href: "/performers/amandatanadinata"
+    }, {
+      label: "Pan Ranger",
+      href: "/performers/panranger"
     }]
-  },/*
-  {
-    label: "Events",
-    href: "/events",
-    children: [
+  },
+  //{
+    //label: "Schedule",
+    //href: "/events",
+    /*children: [
     {
         label: "Thursday Schedule",
         href: "/events/thursday"
@@ -105,8 +108,8 @@ const headersData = [
         label: "Grand Prix Song Contest",
         href: "/events/grandprix"
     }
-    ]
-  },*/
+    ]*/
+  //},
   /*
   {
     label: "Vendors",
