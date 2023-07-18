@@ -23,7 +23,7 @@ const AmandaTanadinataPage = () => {
             />
 
             <PageContent>
-                <Guest personName="Amanda Tanadinata" guestTitle="Passionate dance cover group" guestSocials={guestSocials}>
+                <Guest personName="Amanda Tanadinata" guestTitle="passionate singer and dancer" guestSocials={guestSocials}>
                     When Amanda was little, her Mom asked what she wanted to be when she grow up. Her answer was, "an idol!". 
                     While life took turns in many unexpected ways, she finally was able to start pursuing her dream performing as an idol at NWIF 
                     2022. Besides performing, her passion lies within cancer research, figure skating, and creating arts. Her hope was to be everyone's 

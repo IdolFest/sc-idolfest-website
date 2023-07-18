@@ -76,9 +76,9 @@ const headersData = [
       href: "/performers/panranger"
     }]
   },
-  //{
-    //label: "Schedule",
-    //href: "/events",
+  {
+    label: "Schedule",
+    href: "/events",
     /*children: [
     {
         label: "Thursday Schedule",
@@ -109,7 +109,7 @@ const headersData = [
         href: "/events/grandprix"
     }
     ]*/
-  //},
+  },
   /*
   {
     label: "Vendors",
