@@ -30,7 +30,7 @@ const GuestsPage = () => (
                 <Avatar personName="Pan Ranger" showLink={true} />
                 <Avatar personName="Idolusion!!" showLink={true} />
                 <Avatar personName="Berry" showLink={true} />
-                {/* <Avatar personName="FLO" showLink={true} /> */}
+                <Avatar personName="FLO" showLink={true} />
             </Grid>
         </PageContent>
     </Layout>

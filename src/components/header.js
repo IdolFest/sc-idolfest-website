@@ -80,11 +80,10 @@ const headersData = [
     }, {
       label: "Berry",
       href: "/performers/berry"
-    }, //{ 
-      //label: "FLo",
-      //href: "/performers/flo"
-    //}
-    ]
+    }, { 
+      label: "FLo",
+      href: "/performers/flo"
+    }]
   },
   {
     label: "Schedule",
