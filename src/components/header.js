@@ -74,7 +74,17 @@ const headersData = [
     }, {
       label: "Pan Ranger",
       href: "/performers/panranger"
-    }]
+    }, {
+      label: "Idolusion!!",
+      href: "/performers/idolusion"
+    }, {
+      label: "Berry",
+      href: "/performers/berry"
+    }, //{ 
+      //label: "FLo",
+      //href: "/performers/flo"
+    //}
+    ]
   },
   {
     label: "Schedule",

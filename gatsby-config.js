@@ -16,7 +16,7 @@ module.exports = {
       facebook: 'SCIdolFest',
       instagram: 'SCIdolFest',
       discord: 'h5yJbXgTgE',
-      email: 'scidolfest@gmail.com',
+      email: 'chairs@scidolfest.com',
     }
   },
   plugins: [

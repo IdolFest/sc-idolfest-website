@@ -57,7 +57,11 @@ export default function Avatar({ personName, showLink, showName=true }) {
   
   const avatarImageData = data.allImageSharp.edges.find(
       edge => edge.node.fluid.originalName.toLowerCase() === avatarFilename
-  ).node.gatsbyImageData
+  )?.node?.gatsbyImageData
+
+  if (!avatarImageData) {
+    console.warn("Avatar image not found", avatarFilename)
+  }
 
   return (
     <Grid container direction='column' style={{ maxWidth: '200px' }}>
