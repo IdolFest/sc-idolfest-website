@@ -23,7 +23,7 @@ SC IdolFest will run from 11:30am to 8pm on August 12th!
 |  4:30 pm -  4:45 pm | | [Amanda Tanadinata](/performers/amandatanadinata)
 |  5:00 pm -  5:30 pm | | [Asayoru Maid Cafe](/performers/asayorumaidcafe)
 |  5:45 pm -  6:15 pm | | [Irodori Idols](/performers/irodoriidols)
-|  6:30 pm -  6:45 pm | | [Deco*Pro](performers/deco*pro)
+|  6:30 pm -  6:45 pm | | [Deco*Pro](/performers/deco*pro)
 |  7:00 pm -  7:45 pm | | [Phoebe](/performers/phoebe)
 |  7:45 pm -  8:00 pm | | Closing Ceremonies
 

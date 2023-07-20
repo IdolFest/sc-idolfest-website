@@ -81,7 +81,7 @@ const headersData = [
       label: "Berry",
       href: "/performers/berry"
     }, { 
-      label: "FLo",
+      label: "FLO",
       href: "/performers/flo"
     }]
   },
