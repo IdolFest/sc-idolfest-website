@@ -124,6 +124,11 @@ const headersData = [
     href: "/vendors",
   },
   {
+    label: "Store",
+    href: "https://idolfe.st/shop",
+    external: true
+  },
+  {
     label: "About",
     href: "/about",
     children: [
