@@ -119,11 +119,10 @@ const headersData = [
     }
     ]*/
   },
-  /*
   {
     label: "Vendors",
     href: "/vendors",
-  },*/
+  },
   {
     label: "About",
     href: "/about",
