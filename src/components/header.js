@@ -124,7 +124,7 @@ const headersData = [
     href: "/vendors",
   },
   {
-    label: "Store",
+    label: "Shop",
     href: "https://idolfe.st/shop",
     external: true
   },
