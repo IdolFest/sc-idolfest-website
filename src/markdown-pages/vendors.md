@@ -12,12 +12,12 @@ template: page
 * <a href="https://pebotsu.carrd.co/" target="_blank">Pebotsu</a>
 * <a href="https://gooseisle.carrd.co" target="_blank">Goose Isle</a>
 * <a href="https://haiyun.moe/" target="_blank">haiyun</a>
-* <a href="https://yanyanart.carrd.co/" target="_blank">Yanyancore</a>
+* <a href="https://yanyanart.carrd.co/" target="_blank">Yanyanart</a>
 * <a href="https://www.instagram.com/rottencorearts/?hl=en" target="_blank">Rotten Core Arts</a>
 * <a href="https://www.firststopcosplay.com" target="_blank">First Stop Cosplay</a>
 * <a href="https://www.coolart.store" target="_blank">Cool Art Corner</a>
 * <a href="https://www.wearchromatic.com/" target="_blank">Chromatic</a>
-* <a href="https://www.martypcsr.com" target="_blank">MartyPCSR</a>
+* <a href="https://www.martypcsr.com" target="_blank">MartyPCSR featuring cybercrayons</a>
 * <a href="https://kofuwabunnii.carrd.co/" target="_blank">Etsuko's Confections</a>
 * <a href="https://instagram.com/pyrofennec" target="_blank">pyrofennec</a>
 * <a href="https://linktr.ee/heckinBear" target="_blank">heckin Bear</a>
