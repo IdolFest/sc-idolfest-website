@@ -127,7 +127,7 @@ const OpenRegisterPage = () => {
     initialValues = { 
       badgeType: '',
       fullName: 'Foo', 
-      discordHandle: 'abcd#1234',
+      discordHandle: 'abcd',
       email: 'test@test.com',
       dateOfBirth: new Date('2010', '07', '25'),
       zipCode: '01851',
@@ -195,7 +195,7 @@ const OpenRegisterPage = () => {
               is: (value) => ['badge-sponsor', 'badge-supersponsor'].indexOf(value)  > -1,
               then: Yup.string().required('Required') 
             }),
-          discordHandle: Yup.string().matches(/^.+#\d{4}$/, 'Please provide your full handle, including tag.'),
+          discordHandle: Yup.string().matches(/^(?!.*?\.{2,})[a-z0-9_\.]{2,32}$/, 'Please provide your discord username. Discriminators (#1234) are not supported.'),
           email: Yup.string().email('Invalid email address').required('Required'),
           dateOfBirth: Yup.date().nullable().required('Required'),
           country: Yup.string().required('Required'),
