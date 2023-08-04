@@ -151,11 +151,11 @@ const headersData = [
     {
       label: "Policies",
       href: "/policies"
-    },/*
+    },
     {
       label: "Partners",
       href: "/partners"
-    },*/
+    },
     {
       label: "Discord",
       href: "/about/discord"
