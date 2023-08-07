@@ -100,6 +100,12 @@ const IndexPage = () => {
           <li>Alan Map</li>
           <li>Ferry</li>
           <li>LycorisElaine</li>
+          <li>Chika</li>
+          <li>Sunni</li>
+          <li>Turkey Sandwich</li>
+          <li>Someloser</li>
+          <li>Brad Maxwell</li>
+          <li>jumpyapple</li>
           <li>and more...</li>
         </ul>
 
