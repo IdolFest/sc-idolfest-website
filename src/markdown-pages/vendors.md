@@ -3,6 +3,9 @@ slug: /vendors
 title: Vendors
 template: page
 ---
+
+<link rel="stylesheet" href="/inline-css/vendors.css"></link>
+
 ## Vendor Hall Hours
 
 * 11 AM - 8 PM
@@ -13,7 +16,7 @@ template: page
 
 ## Vendor Lineup
 
-<div style="font-size: 140%; display: flex; flex-direction:column; padding: 0 32px; text-align: left;">
+<div class="vendor-lineup" style="font-size: 140%; display: flex; flex-direction:column; padding: 0 32px; text-align: left;">
 
 | Performers | Artist Alley & Fans |  |
 | --------- | ------------------ | -------- |
