@@ -1,0 +1,12 @@
+/* Make vendors page table look okay on mobile devices */
+@media only screen and (max-width: 768px) {
+
+    /*.vendor-lineup td, .vendor-lineup th { 
+        display: block; 
+    }*/
+
+    .vendor-lineup {
+        font-size: 100% !important;
+        padding: 0 !important;
+    }
+}
