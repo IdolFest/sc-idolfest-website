@@ -7,7 +7,7 @@ import Guest from '@components/Guest'
 
 const AsayoruMaidCafe = () => {
     const guestSocials = [
-        { link: `http://instagram.com/asayorucafe`, icon: 'instagram'},
+        { link: `https://instagram.com/asayorucafe`, icon: 'instagram'},
         { link: `https://twitter.com/asayorucafe`, icon: 'twitter'},
         { link: `https://www.facebook.com/asayorucafe`, icon: "facebook"},
         { link: `https://www.youtube.com/channel/UCogZ_IzJnpwiJVFqnlzLsaQ`, icon: 'youtube'},
