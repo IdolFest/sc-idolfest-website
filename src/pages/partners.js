@@ -126,7 +126,6 @@ const IndexPage = () => {
           <li>Animertphoto</li>
           <li>Valmont</li>
           <li>JennyCandy</li>
-          <li>and more...</li>
         </ul>
 
       </PageContent>
