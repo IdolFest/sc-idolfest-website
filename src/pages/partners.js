@@ -62,7 +62,7 @@ const IndexPage = () => {
         </Grid>
 
         <Grid container style={{ justifyContent: 'space-around' }}>
-        <a href="https://www.dreamlandmaidcafe.com/" target="_blank" rel="noreferrer" className={classes.partnerLogo}>
+          <a href="https://www.dreamlandmaidcafe.com/" target="_blank" rel="noreferrer" className={classes.partnerLogo}>
             <StaticImage
               // This is a presentational image, so the alt should be an empty string
               alt=''
@@ -85,6 +85,21 @@ const IndexPage = () => {
             />
           </a>
         </Grid>
+
+        <Grid container style={{ justifyContent: 'space-around' }}>
+          <a href="https://tsunscoops.com" target="_blank" rel="noreferrer" className={classes.partnerLogo}>
+            <StaticImage
+              // This is a presentational image, so the alt should be an empty string
+              alt=''
+              src='../images/partners/tsunscoops.png'
+              loading='eager'
+              placeholder='blurred'
+              quality='100'
+              height={300}
+            />
+          </a>
+        </Grid>
+
         
         <br />
         <p>We also extend a huge THANK YOU to all our generous 2023 Gold sponsors!</p>
@@ -106,6 +121,11 @@ const IndexPage = () => {
           <li>Someloser</li>
           <li>Brad Maxwell</li>
           <li>jumpyapple</li>
+          <li>Lycoris Elaine</li>
+          <li>Matthew Kim</li>
+          <li>Animertphoto</li>
+          <li>Valmont</li>
+          <li>JennyCandy</li>
           <li>and more...</li>
         </ul>
 
