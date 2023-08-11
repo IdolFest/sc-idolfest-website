@@ -342,7 +342,8 @@ const OpenRegisterPage = () => {
           <i>
           Photo ID is required to pick up your badge.<br />
           Masks are optional, but encouraged.<br />
-          By registering for a badge, you agree to comply with all <a href='/policies' target='_blank'>SCIF policies</a>. 
+          Registration opens at 10:30am.<br />
+          By registering for a badge, you agree to comply with all <a href='/policies' target='_blank'>SCIF policies</a>.
           </i>
           {props.values.badgeType === 'badge-supersponsor' && (<><br /><br /><i>A credit card matching the name on your registration will be required for incidentals when checking into your Prism hotel room (or you may ask them to disable incidentals). The primary guest on the room must be over 18. Up to 2 additional guests may be added to the room by <Link to='/contact'>contacting us</Link>.</i></>) }
           <Button variant="contained" className="cta" type="submit">
@@ -363,11 +364,11 @@ const ClosedRegisterPage = () => {
     <Layout>
       <Seo title="Register" />
 
-      <Hero header="Thank you for attending NW IdolFest 2022!" />
+      <Hero header="Thank you for attending SC IdolFest 2023!" />
 
       <PageContent>
         <p>
-          Registration is closed because Northwest IdolFest 2022 is now over.
+          Registration is closed because Northwest IdolFest 2023 is now over.
           Sign up for our email list below to get notified when our next
           convention will be!
         </p>

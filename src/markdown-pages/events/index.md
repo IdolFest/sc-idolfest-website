@@ -8,6 +8,8 @@ template: page
 
 SC IdolFest will run from 11:30am to 8pm on August 12th! Doors open at 11am.
 
+Registration opens at 10:30am.
+
 <div style="font-size: 200%; margin-left: 32px; cellpadding: 8px;">
 
 |                  | |                       |
