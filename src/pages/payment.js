@@ -46,9 +46,10 @@ const PaymentPage = ({ location }) => {
           <PaymentForm guid={guid} amount={amount} />
         )}
         <CenteredBox>
-          <small>If you encounter errors, please <Link to='/contact'>contact us</Link> and provide reference ID {guid}.</small>
-          <br />
-          <small>Payment processing is provided by Square. NWIF never handles or stores your credit card details.</small>
+          <p>If you encounter errors, please <Link to='/contact'>contact us</Link> and provide reference ID {guid}.</p>
+          <p>Your confirmation email could take up to 30 minutes to arrive. Please be patient!</p>
+          <small>Payment processing is provided by Square. NWIF never handles or stores your credit card details.</small><br />
+
         </CenteredBox>
       </PageContent>
     </Layout>
