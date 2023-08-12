@@ -44,7 +44,7 @@ const allBadgeTiers = [
     badgeKey: 'scif-badge-attendee',
     onSale: true,
     hasTax: true,
-    price: '30<br />$35 at the door',
+    price: '35',
     tierName: 'Silver',
     description: 'This badge grants:',
     perks: [
