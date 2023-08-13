@@ -23,7 +23,7 @@ import { styled } from '@material-ui/styles'
 import { navigate, Link } from 'gatsby'
 import RegistrationTier from '@components/registrationTier'
 
-const registrationEnabled = true
+const registrationEnabled = false
 
 let lambdaUrl
 
@@ -368,7 +368,7 @@ const ClosedRegisterPage = () => {
 
       <PageContent>
         <p>
-          Registration is closed because Northwest IdolFest 2023 is now over.
+          Registration is closed because SoCal IdolFest 2023 is now over.
           Sign up for our email list below to get notified when our next
           convention will be!
         </p>

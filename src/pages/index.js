@@ -56,7 +56,7 @@ const IndexPage = () => {
       <Seo title="Home" />
 
       <Hero 
-        header="Announcing SC IdolFest 2023!"
+        header="Thank you for attenting SC IdolFest 2023!"
         body={buyBadge}
       />
 
@@ -65,25 +65,8 @@ const IndexPage = () => {
       /> */}
 
       <PageContent>
-        <p>Get ready for SC IdolFest 2023!</p>
-
-        <p>
-          SoCal IdolFest is a one day concert all about idols, anisong, and j-pop! Featuring your favorite idol performers and 
-          a stellar lineup of vendors, join us in Torrance, CA on August 12
-        </p>
-        <p>
-          Badges are currently on sale! Buy before the event and save money - badges will be $35 at the door!
-        </p>
-
-        <div className={classes.buttonHolder}>
-          <Button variant="contained" size="large" className="cta" href="/register">Buy a Badge</Button>
-        </div>
-
-        <br />
-        <br />
-        <p>
-          Sign up for our email list below to get notifications for future announcements.
-        </p>
+        <p>Thank you for attending SC Idol Festival 2023! If you have any feedback for us, <a href="https://idolfe.st/scif-feedback">we would love to know how we did</a>.</p>
+        <p>Sign up for our email list below to get notified when our next convention will be!</p>
 
         <NewsletterSignup />
 
