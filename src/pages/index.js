@@ -65,7 +65,7 @@ const IndexPage = () => {
       /> */}
 
       <PageContent>
-        <p>Thank you for attending SC Idol Festival 2023! If you have any feedback for us, <a href="https://idolfe.st/scif-feedback">we would love to know how we did</a>.</p>
+        <p>Thank you for attending SoCal IdolFest 2023! If you have any feedback for us, <a href="https://idolfe.st/scif-feedback">we would love to know how we did</a>.</p>
         <p>Sign up for our email list below to get notified when our next convention will be!</p>
 
         <NewsletterSignup />
